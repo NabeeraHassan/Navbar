@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+body{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+
+}
+ul{
+    list-style-type:none;
+    display:flex;
+    gap:30px;
+    align-items:center;
+    cursor:pointer;
+    
+}
+button{
+    background-color:rgba(117, 191, 122, 1);
+    color:white;
+    padding:5px;
+    border:none;
+}
+.img1{
+    width:100px;
+}
+.img2{
+    width:20px;
+}
+@media screen and (max-width: 600px) {
+        .hidee {
+            display: none;
+        }
+        /* .img2{
+            display: block;
+        } */
+
+       
+    }
+    @media screen and (min-width: 600px) {
+        .hidee {
+            display: block;
+            display:flex;
+        }
+           .img2{
+            display: none;
+        }
+
+       
+    }
+    </style>
+</head>
+<body>
+     <ul>
+        <li>
+            <img src="./logo.png" alt="" class="img1">
+        </li>
+     </ul>
+
+    <ul class="hidee">
+        <li>Home</li>
+        <li>How tere Work</li>
+        <li>There Benefits</li>
+        <li>
+            <button>
+                Help Center
+            </button>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <img src="./vector.png" alt="" class="img2">
+        </li>
+    </ul>
+</body>
+</html>
